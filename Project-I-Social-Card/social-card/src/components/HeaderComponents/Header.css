@@ -1,1 +1,27 @@
 /* All styles for your header Components live here */
+.HeaderContainer{
+    display: flex;
+    margin-left: 10px; 
+}
+
+.HeaderTitle {
+    display: flex;
+    align-items: center;
+    height: 40px; 
+}
+
+.HeaderTitle h3{
+    margin-right: 10px; 
+    font-size: 18px; 
+}
+
+.HeaderTitle p {
+    font-size: 16px; 
+    color: #5C5C5C;
+    width: 650px;  
+}
+
+.ImageThumbnail{
+    width: 50px;
+    height: 50px;  
+}
