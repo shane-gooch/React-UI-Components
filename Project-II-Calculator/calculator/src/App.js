@@ -7,7 +7,7 @@ import SymbolButton from './components/ButtonComponents/SymbolButton';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 
 const App = () => {
-  const numbers = [1,2,3,4,5,6,7,8,9];
+  const numbers = [9,8,7,6,5,4,3,2,1];
   const actions = [0, 'clear'];
   const symbols = ['%', 'x', '-', '+', '='];
   const display = <div><h1>0</h1></div>
