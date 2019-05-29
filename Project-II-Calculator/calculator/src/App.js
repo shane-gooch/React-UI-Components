@@ -10,7 +10,7 @@ const App = () => {
   const numbers = [9,8,7,6,5,4,3,2,1];
   const actions = [0, 'clear'];
   const symbols = ['%', 'x', '-', '+', '='];
-  const display = <div><h1>0</h1></div>
+  const display = <div><h1>0</h1></div>;
 
   return (
     <div>
@@ -22,17 +22,20 @@ const App = () => {
 
         <div class='numbers-symbols'>
 
-          <NumberButton buttonStyle= 'numbers' text={
-            numbers.map(num => {
-              return <button class='number'>{num}</button>; 
-            })} /> 
+          <div class='numbers'>
+            {numbers.map(num => {
+              return <NumberButton buttonStyle= 'number' text={num} /> ; 
+            })} 
+          </div>
 
-            <SymbolButton buttonStyle= 'symbols' text={
-              symbols.map(symbol => {
-                return <button class='symbol'>{symbol}</button>;
-              })} />
+          <div class='symbols'>
+            {symbols.map(symbol => {
+              return <SymbolButton buttonStyle= 'symbol' text={symbol} />
+            })}
+          </div>
 
         </div>
+
       </div>
 
         <ActionButton buttonStyle='action' text={actions[0]} />
